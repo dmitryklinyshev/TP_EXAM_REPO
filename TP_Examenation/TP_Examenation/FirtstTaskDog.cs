@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace TP_Examenation
 {
-    class FirstTaskDog : Helper, Interface1
+   public class FirstTaskDog : Helper, Interface1
     {
+        public int Mimimishnost { get; set; }
+
+       
         //переопределяем метод наследуемого класса Helper
         public override string Display()
         {

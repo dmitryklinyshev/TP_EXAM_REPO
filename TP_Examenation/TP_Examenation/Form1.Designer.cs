@@ -35,7 +35,7 @@
             this.buttonShit = new System.Windows.Forms.Button();
             this.EventBtn = new System.Windows.Forms.Button();
             this.Exceptions = new System.Windows.Forms.Button();
-            this.Exception2 = new System.Windows.Forms.Button();
+            this.mimiCompare = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CatBtn
@@ -105,22 +105,22 @@
             this.Exceptions.UseVisualStyleBackColor = true;
             this.Exceptions.Click += new System.EventHandler(this.Exceptions_Click);
             // 
-            // Exception2
+            // mimiCompare
             // 
-            this.Exception2.Location = new System.Drawing.Point(660, 335);
-            this.Exception2.Name = "Exception2";
-            this.Exception2.Size = new System.Drawing.Size(118, 46);
-            this.Exception2.TabIndex = 8;
-            this.Exception2.Text = "Own Exception";
-            this.Exception2.UseVisualStyleBackColor = true;
-            
+            this.mimiCompare.Location = new System.Drawing.Point(282, 28);
+            this.mimiCompare.Name = "mimiCompare";
+            this.mimiCompare.Size = new System.Drawing.Size(249, 48);
+            this.mimiCompare.TabIndex = 9;
+            this.mimiCompare.Text = "Кто милее? Кошки или Собаки?";
+            this.mimiCompare.UseVisualStyleBackColor = true;
+            this.mimiCompare.Click += new System.EventHandler(this.mimiCompare_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Exception2);
+            this.Controls.Add(this.mimiCompare);
             this.Controls.Add(this.Exceptions);
             this.Controls.Add(this.EventBtn);
             this.Controls.Add(this.buttonShit);
@@ -144,7 +144,7 @@
         private System.Windows.Forms.Button buttonShit;
         private System.Windows.Forms.Button EventBtn;
         private System.Windows.Forms.Button Exceptions;
-        private System.Windows.Forms.Button Exception2;
+        private System.Windows.Forms.Button mimiCompare;
     }
 }
 

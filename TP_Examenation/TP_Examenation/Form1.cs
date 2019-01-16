@@ -52,10 +52,11 @@ namespace TP_Examenation
         {
             var huinushu = new List<Helper> /*создаем список, содержащий в себе объекты разных классов.*/
             {
-                new FirstTaskCat(),
-              /*  new FirstTaskDog()*/ /*раскомментируйте и закомментируйте код выше, для того , чтобы вызывать этот обьект */
+                //new FirstTaskCat(),
+                  new FirstTaskDog() /*раскомментируйте и закомментируйте код выше, для того , чтобы вызывать этот обьект */
+            
             };
-
+         
             foreach (var huinushuka in huinushu) /*выводим каждый класс, одновременно выодится только один класс*/
             {
                 textBoxForAnim.Text = huinushuka.Display().ToString();
@@ -94,6 +95,8 @@ namespace TP_Examenation
             logger.Info("Создание файла, использование событий ");
         }
 
+        
+
         private void Exceptions_Click(object sender, EventArgs e) /*обработчик эксепшенов*/ 
         {
             object w = "сюрприз";
@@ -126,6 +129,28 @@ namespace TP_Examenation
             catch (Exception ex) /*используем класс Exception*/
             {
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void mimiCompare_Click(object sender, EventArgs e)
+        {
+            FirstTaskCat cat = new FirstTaskCat();
+            FirstTaskDog dog = new FirstTaskDog();
+            Helper h = new Helper();
+            h.Compare(cat, dog);
+
+            if(h.res == -1)
+            {
+                textBoxForAnim.Text = "Кошки милее";
+            }else
+                if(h.res == 1)
+            {
+                textBoxForAnim.Text = "Песики лучшие";
+            }
+            else
+            {
+                textBoxForAnim.Text = "Люблю всех!";
             }
 
         }

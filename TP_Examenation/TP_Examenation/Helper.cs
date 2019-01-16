@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,8 +9,11 @@ using System.Windows.Forms;
 
 namespace TP_Examenation
 {
-    public class Helper
+    public class Helper : IComparer
     {
+        public int res;
+      
+
         //создаем делегат
         delegate string Message();
 
@@ -37,10 +41,29 @@ namespace TP_Examenation
             return "Добрый вечер из делегата";
         }
 
-        
+        public int Compare(object cat, object dog)
+        {
 
+            if (new FirstTaskCat { Mimimishnost = 3 }.Mimimishnost > new FirstTaskDog { Mimimishnost = 5 }.Mimimishnost)
+            {
+                return res = -1;
+            }
+            else
+            if
+                (new FirstTaskDog { Mimimishnost = 5 }.Mimimishnost > new FirstTaskCat { Mimimishnost = 3 }.Mimimishnost)
+            {
+                return res = 1;
+            }
+            else
+                return res = 0;
 
         }
+
+      
     }
+
+        
+  }
+    
 
 

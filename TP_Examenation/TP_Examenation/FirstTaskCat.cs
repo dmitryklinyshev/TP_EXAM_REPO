@@ -9,6 +9,9 @@ namespace TP_Examenation
     //класс FirstTaskCat наследуемый от класса Helper и реализующий интерфейс Interface1
     public class FirstTaskCat : Helper, Interface1
     {
+        public int Mimimishnost { get; set; }
+
+
 
         //реализуем метод интерфейса
         public string Sound()
