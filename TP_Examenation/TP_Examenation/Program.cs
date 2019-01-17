@@ -17,6 +17,8 @@ namespace TP_Examenation
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            Eventer eventer = new Eventer();
           
             //Console.WriteLine(c1.Fact(5));
 
